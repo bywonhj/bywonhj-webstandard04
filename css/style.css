@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url(reset.css);
+
+body{
+    font-family:'Open Sans', sans-serif ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+*{box-sizing: border-box;}
+
+/* 해더 */
+.top-header{
+    background-color: #523737;
+    position: fixed;top:0;
+    width: 100%;
+    padding: 5px 10px 15px;
+    color: #fff;
+}
+.header-top{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.top-header .header-column{width: 33%;}
+.top-header .header-column:nth-child(2){text-align: center;}
+.top-header .header-column:last-child{text-align: right;}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin:0 10px;
+}
+.header-bottom .header-column:first-child{color:rgba(255,255,255,.5)}
+.header-bottom .header-number{color:#ffe94a}
+
+/* 하단탭바 */
+.tab-bar{
+    background-color: #f7f7f7;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    padding: 10px 30px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.tab-bar_tab{
+    display: flex;
+    flex-direction: column;
+    color:#c1c1c1;
+    align-items: center;
+}
+.tab-bar_tab:hover{
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+.tab-bar_title{font-size: 12px;}
+.tab-bar_tab i{font-size: 24px; margin-bottom: 5px;}
+.tab-bar_tab.tab-bar_selected{color:#523737}
+
+/* 메인  */
+/* 서치바*/
+.search-bar {
+    padding: 15px 25px;
+}
+.search-bar input[type="text"]{
+    width: 100%;
+    padding: 5px 7px;
+    background-color: #f1f2f3;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid transparent;
+}
+.search-bar input[type="text"]:focus{
+    outline: none;
+    border-color: #ffe94a;
+}
