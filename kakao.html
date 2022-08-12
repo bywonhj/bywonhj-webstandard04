@@ -5,129 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카카오</title>
-    <script src="https://kit.fontawesome.com/54c2b5cde2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <header class='header'>
-        <div class='header-top'>
-            <div class='header-column'>
+    <header class="top-header">
+        <div class="header-top">
+            <div class="header-column">
                 <i class="fa fa-fighter-jet"></i>
                 <i class="fa fa-wifi"></i>
             </div>
-            <div class='header-column'>
-                <span class='header-time'>15:29</span>
+            <div class="header-column">
+                <span class="header-time">17:17</span>
             </div>
-            <div class='header-column'>
+            <div class="header-column">
                 <i class="fa fa-moon-o"></i>
                 <i class="fa fa-bluetooth-b"></i>
-                <span class='header-battery'>100%<i class="fa fa-battery-full"></i></span>
+                <span class="header-battery">100% <i class="fa fa-battery-full"></i></span>
             </div>
-        </div><!-- //header-top -->
-        <div class='header-bottom'>
+        </div>
+        <div class="header-bottom">
             <div class="header-column">
                 <span class="header-text">Manage</span>
             </div>
-            <div class='header-column'>
+            <div class="header-column">
                 <span class="header-text">Friends <span class="header-number">1</span></span>
             </div>
-            <div class='header-column'>
+            <div class="header-column">
                 <i class="fa fa-cog"></i>
             </div>
-        </div><!-- //header-bottom -->
+        </div>
     </header>
-    <!-- e:header -->
-    <main class='friends'>
+    <!-- //해더 -->
+    <main class="friends">
         <div class="search-bar">
-            <i class='fa fa-search'></i>
-            <label for="searchFriends" class='blind'>친구찾기</label>
-            <input type="search" placeholder="Find friends, chats, Plus Friends" id="searchFriends">
+            <i class="fa fa-search"></i>
+            <label for="searchFriends" class="blind">친구찾기</label>
+            <input type="text" placeholder="Find friends, chats, Plus Friends" id="searchFriends">
         </div><!-- //검색영역 -->
-        <section class='friends-section'>
-            <div class='friends-section-header'>
-                <h2 class="friends-section-title">My Profile</h2>
-            </div><!-- 프렌즈 섹션 해더 -->
-            <div class='friends-section-row-box'>
-                <div class='friends-section-row'>
-                    <img src='img/kakao/empty.jpg' alt='사용자'>
-                    <a href="profile.html" class='friends-section-name'>My Name</a>
+        <section class="friends-section">
+            <div class="friends-section_header">
+                <h2 class="friends-section_title">My Profile</h2>
+            </div>
+            <div class="friends-section_rows">
+                <div class="friends-section_row">
+                    <img src="images/empty.jpg" alt="사용자">
+                    <a href="profile.html" class="friends-section_name">
+                        My Name
+                    </a>
+                </div>
+                <div class="friends-section_row">
+                    <img src="images/empty.jpg" alt="사용자">
+                    <span class="friends-section_name">
+                        Friends' Names Display
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="friends-section">
+            <div class="friends-section_header">
+                <h2 class="friends-section_title">Friends</h2>
+            </div>
+            <div class="friends-section_rows">
+                <div class="friends-section_row with-tagline">
+                    <div class="friends-section_column"> 
+                        <img src="images/empty.jpg" alt="사용자">
+                        <span class="friends-section_name">
+                            Friends' Names Display
+                        </span>
+                    </div>
+                    <div class="friends-section_tagline">
+                        Have a good day. See you soon.
+                    </div>
                 </div><!-- //row -->
-                <div class='friends-section-row'>
-                    <img src='img/kakao/empty.jpg' alt='사용자'>
-                    <span class='friends-section-name'>Friends' Names Display</span>
+                <div class="friends-section_row with-tagline">
+                    <div class="friends-section_column"> 
+                        <img src="images/empty.jpg" alt="사용자">
+                        <span class="friends-section_name">
+                            Friends' Names Display
+                        </span>
+                    </div>
+                    <div class="friends-section_tagline">
+                        Have a good day. See you soon.
+                    </div>
                 </div><!-- //row -->
-            </div><!-- 프렌즈 섹션 로우 박스 -->
-        </section><!-- //friends-section -->
-        <section class='friends-section'>
-            <div class='friends-section-header'>
-                <h2 class="friends-section-title">Friends</h2>
-            </div><!-- 프렌즈 섹션 해더 -->
-            <div class='friends-section-row-box'>
-                <div class='friends-section-row with-tagline'>
-                    <div class='friends-section-column'>
-                        <img src='img/kakao/empty.jpg' alt='사용자'>
-                        <span class='friends-section-name'>Friends' Names Display</span>
+                <div class="friends-section_row with-tagline">
+                    <div class="friends-section_column"> 
+                        <img src="images/empty.jpg" alt="사용자">
+                        <span class="friends-section_name">
+                            Friends' Names Display
+                        </span>
                     </div>
-                    <div class="friends-section-tagline">
+                    <div class="friends-section_tagline">
                         Have a good day. See you soon.
                     </div>
-                </div>
-            </div><!-- 프렌즈 섹션 로우 박스 -->
-            <div class='friends-section-row-box'>
-                <div class='friends-section-row with-tagline'>
-                    <div class='friends-section-column'>
-                        <img src='img/kakao/empty.jpg' alt='사용자'>
-                        <span class='friends-section-name'>Friends' Names Display</span>
+                </div><!-- //row -->
+                <div class="friends-section_row with-tagline">
+                    <div class="friends-section_column"> 
+                        <img src="images/empty.jpg" alt="사용자">
+                        <span class="friends-section_name">
+                            Friends' Names Display
+                        </span>
                     </div>
-                    <div class="friends-section-tagline">
+                    <div class="friends-section_tagline">
                         Have a good day. See you soon.
                     </div>
-                </div>
-            </div><!-- 프렌즈 섹션 로우 박스 -->
-            <div class='friends-section-row-box'>
-                <div class='friends-section-row with-tagline'>
-                    <div class='friends-section-column'>
-                        <img src='img/kakao/empty.jpg' alt='사용자'>
-                        <span class='friends-section-name'>Friends' Names Display</span>
-                    </div>
-                    <div class="friends-section-tagline">
-                        Have a good day. See you soon.
-                    </div>
-                </div>
-            </div><!-- 프렌즈 섹션 로우 박스 -->
-            <div class='friends-section-row-box'>
-                <div class='friends-section-row with-tagline'>
-                    <div class='friends-section-column'>
-                        <img src='img/kakao/empty.jpg' alt='사용자'>
-                        <span class='friends-section-name'>Friends' Names Display</span>
-                    </div>
-                    <div class="friends-section-tagline">
-                        Have a good day. See you soon.
-                    </div>
-                </div>
-            </div><!-- 프렌즈 섹션 로우 박스 -->
+                </div><!-- //row -->
+            </div>
         </section>
     </main>
-    <!-- e:main -->
-    <nav class='tab-bar'>
-        <a href="index.html" class='tab-bar-tab tab-bar-selected'>
+    <!-- //메인 -->
+    <nav class="tab-bar">
+        <a href="index.html" class="tab-bar_tab tab-bar_selected">
             <i class="fa fa-user"></i>
-            <span class="tab-bar-title">Friends</span>
+            <span class="tab-bar_title">Friends</span>
         </a>
-        <a href="chats.html" class='tab-bar-tab'>
+        <a href="chats.html" class="tab-bar_tab">
             <i class="fa fa-comment"></i>
-            <span class="tab-bar-title">Chats</span>
+            <span class="tab-bar_title">Chats</span>
         </a>
-        <a href="find.html" class='tab-bar-tab'>
+        <a href="find.html" class="tab-bar_tab">
             <i class="fa fa-search"></i>
-            <span class="tab-bar-title">Find</span>
+            <span class="tab-bar_title">Find</span>
         </a>
-        <a href="more.html" class='tab-bar-tab'>
+        <a href="more.html" class="tab-bar_tab">
             <i class="fa fa-ellipsis-h"></i>
-            <span class="tab-bar-title">More</span>
+            <span class="tab-bar_title">More</span>
         </a>
     </nav>
-    <div class='big-screen-text'>
+    <!-- //탭바 -->
+    <div class="big-screen_text">
         <span>Please make your screen smaller</span>
     </div>
 </body>
